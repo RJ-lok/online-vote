@@ -56,7 +56,7 @@ function showMessage($message, $showForm = false, $vote_id = '') {
                     </form>
                 <?php endif; ?>
 
-                <a href="vote.html">Back to Home</a>
+                <a href="index.html">Back to Home</a>
             </div>
         </div>
     </body>
