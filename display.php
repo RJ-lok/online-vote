@@ -14,7 +14,9 @@ if (!$conn) {
         echo "<h1>Live Result is:<br></h1>";
         echo "<table border='1'>
                 <tr> <th>Candidate name</th> 
-                <th>vote</th> </tr>";
+                <th>vote</th> 
+                <th>symbol</th>
+                </tr>";
         while($row = pg_fetch_assoc($result)) 
         {
             echo "<tr> 
