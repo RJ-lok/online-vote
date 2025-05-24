@@ -21,7 +21,7 @@ function showMessage($message) {
         <div class="screen-center">
             <div class="box">
                 <h3><?= htmlspecialchars($message) ?></h3>
-                <a href="vote.html">Back to Home</a>
+                <a href="index.html">Back to Home</a>
             </div>
         </div>
     </body>
