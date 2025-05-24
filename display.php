@@ -6,7 +6,7 @@ if (!$conn) {
     die("Connection failed: " . pg_last_error());
 }
 
-    $query = "SELECT e_name,plus FROM ele";
+    $query = "SELECT e_name,plus,symbol FROM ele";
     $result = pg_query($conn, $query);
 
     if (pg_num_rows($result) > 0) {
@@ -20,6 +20,7 @@ if (!$conn) {
             echo "<tr> 
                     <td>{$row['e_name']}</td>
                     <td>{$row['plus']}</td>
+                    <td>{$row['symbol']}</td>
                   </tr>";
         }
         echo "</table>";
