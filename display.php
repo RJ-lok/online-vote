@@ -20,7 +20,7 @@ if (!$conn) {
             echo "<tr> 
                     <td>{$row['e_name']}</td>
                     <td>{$row['plus']}</td>
-                    <td>{$row['symbol']}</td>
+                    <td><img src={$row['symbol']}  style=width:60px; height:60px; vertical-align:middle; margin-right:8px;></td>
                   </tr>";
         }
         echo "</table>";
