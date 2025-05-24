@@ -1,7 +1,7 @@
 
 <?php
 $pass="your_new_password";
-$conn = pg_connect("host=localhost dbname=se05 user=postgres password=$pass");
+$conn = pg_connect("host=localhost dbname=project user=postgres password=$pass");
 if (!$conn) {
     die("Connection failed: " . pg_last_error());
 }
