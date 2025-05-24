@@ -10,6 +10,7 @@ if (!$conn) {
     $result = pg_query($conn, $query);
 
     if (pg_num_rows($result) > 0) {
+        echo "<center>";
         echo "Live Result is:<br>";
         echo "<table border='1'>
                 <tr> <th>Candidate name</th> 
@@ -27,5 +28,6 @@ if (!$conn) {
     {
         echo "error";
     }
+    echo "</center>";
 pg_close($conn);
 ?>
