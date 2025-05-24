@@ -23,5 +23,9 @@ if (!$conn) {
         }
         echo "</table>";
     } 
+    else
+    {
+        echo "error";
+    }
 pg_close($conn);
 ?>
