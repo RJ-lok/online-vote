@@ -11,7 +11,7 @@ if (!$conn) {
 
     if (pg_num_rows($result) > 0) {
         echo "<center>";
-        echo "Live Result is:<br>";
+        echo "<h1>Live Result is:<br></h1>";
         echo "<table border='1'>
                 <tr> <th>Candidate name</th> 
                 <th>vote</th> </tr>";
