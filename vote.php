@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$pass = "your_new_password";  // Replace with your actual password
+$pass="your_new_password";// Replace with your actual password
 $conn = pg_connect("host=localhost port=5432 dbname=project user=postgres password=$pass");
 
 if (!$conn) {
