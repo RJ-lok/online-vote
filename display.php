@@ -12,7 +12,7 @@ if (!$conn) {
     if (pg_num_rows($result) > 0) {
         echo "<center>";
         echo "<h1>Live Result is:<br></h1>";
-        echo "<table border='1'>
+        echo "<table border='1' style=width:50%; height=80%;>
                 <tr> <th>Candidate name</th> 
                 <th>vote</th> 
                 <th>symbol</th>
@@ -20,10 +20,10 @@ if (!$conn) {
         while($row = pg_fetch_assoc($result)) 
         {
             echo "<tr> 
-                    <td>{$row['e_name']}</td>
-                    <td>{$row['plus']}</td>
-                    <td><img src={$row['symbol']}  style=width:60px; height:60px; vertical-align:middle; margin-right:8px;></td>
-                  </tr>";
+                   <td align=center><h3>{$row['e_name']}</h3></td>
+                    <td align=center><img src={$row['symbol']}  style=width:150px; height:150px; vertical-align:middle; margin-right:8px;></td>
+                     <td align=center>{$row['plus']}</td>
+                    </tr>";
         }
         echo "</table>";
     } 
