@@ -1,92 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Government of India - Voting Portal</title>
-    <link rel="stylesheet" href="vote.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #093;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 5px solid #ff9933;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-        header h2 {
-            margin: 5px 0;
-            font-weight: normal;
-            font-size: 18px;
-        }
-        .center-box {
-            background-color: white;
-            max-width: 400px;
-            margin: 30px auto;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            text-align: center;
-        }
-        input[type="text"], input[type="submit"] {
-            width: 90%;
-            padding: 10px;
-            margin-top: 10px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-        input[type="submit"] {
-            background-color: #0066cc;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #004080;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #222;
-            color: white;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>myVote | Government of India</title>
+  <link rel="icon" href="https://uidai.gov.in/images/logo.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #043b72, #0078d7);
+      color: white;
+    }
+    header {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: 2px solid #e5e5e5;
+    }
+    header img {
+      height: 60px;
+    }
+    header h2 {
+      color: #01579b;
+      font-size: 20px;
+      margin: 0;
+    }
+    .main-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 50px 10%;
+      flex-wrap: wrap;
+    }
+    .welcome-box {
+      max-width: 500px;
+    }
+    .welcome-box h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .welcome-box p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+    .form-card {
+      background-color: white;
+      color: #000;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 350px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .form-card img {
+      height: 100px;
+      margin-bottom: 15px;
+    }
+    .form-card input[type="text"],
+    .form-card input[type="submit"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .form-card input[type="submit"] {
+      background: linear-gradient(to right, #004c8c, #00b4db);
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .form-card input[type="submit"]:hover {
+      opacity: 0.9;
+    }
+    footer {
+      background-color: white;
+      color: #222;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+    .languages {
+      margin: 10px auto;
+      text-align: center;
+      font-size: 15px;
+    }
+    .languages span {
+      margin: 0 10px;
+      color: #eee;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Government of India</h1>
-        <h2>Official Voting Portal</h2>
-    </header>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Emblem_of_India.svg/120px-Emblem_of_India.svg.png" alt="Emblem" />
+    <h2>Government of India - National Voting Portal</h2>
+    <img src="https://uidai.gov.in/images/logo.png" alt="myVote" />
+  </header>
 
-    <div class="center-box">
-        <form method="post" action="vote.php">
-            <h3>Cast Your Vote</h3>
-            <input type="text" name="vote_id" placeholder="Enter Voting ID" required><br>
-            <input type="submit" value="Submit">
-        </form>
+  <div class="main-container">
+    <div class="welcome-box">
+      <h1>Welcome to <br><strong>myVote</strong></h1>
+      <p>Click on Login button to cast your vote or view results securely. Use your voter ID or registered mobile to verify your identity. Ensure you're eligible and registered before proceeding to vote in the national digital voting system.</p>
     </div>
 
-    <div class="center-box">
-        <form method="post" action="display.php">
-            <h3>Display Voting Result</h3>
-            <p>Click on Submit to view current results</p>
-            <input type="submit" value="Submit">
-        </form>
+    <div class="form-card">
+      <img src="https://www.pngitem.com/pimgs/m/114-1149842_fingerprint-png-image-fingerprint-logo-png-transparent-png.png" alt="Fingerprint">
+      <form method="post" action="vote.php">
+        <input type="text" name="vote_id" placeholder="Enter Voting ID" required><br>
+        <input type="submit" value="Vote Now">
+      </form>
+      <hr>
+      <form method="post" action="display.php">
+        <input type="submit" value="View Results">
+      </form>
     </div>
+  </div>
 
-    <footer>
-        © 2025 Government of India | National e-Governance Division
-    </footer>
+  <div class="languages">
+    <span>English</span>
+    <span>हिंदी</span>
+    <span>বাংলা</span>
+    <span>ગુજરાતી</span>
+    <span>తెలుగు</span>
+    <span>मराठी</span>
+    <span>தமிழ்</span>
+    <span>اردو</span>
+  </div>
+
+  <footer>
+    © 2025 myVote Portal | Designed for Online Voting - National Informatics Centre (NIC)
+  </footer>
 
 </body>
 </html>
