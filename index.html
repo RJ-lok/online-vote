@@ -4,115 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>myVote | Government of India</title>
-  <link rel="icon" href="https://uidai.gov.in/images/logo.png" type="image/png">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #043b72, #0078d7);
-      color: white;
-    }
-    header {
-      background-color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 30px;
-      border-bottom: 2px solid #e5e5e5;
-    }
-    header img {
-      height: 60px;
-    }
-    header h2 {
-      color: #01579b;
-      font-size: 20px;
-      margin: 0;
-    }
-    .main-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 50px 10%;
-      flex-wrap: wrap;
-    }
-    .welcome-box {
-      max-width: 500px;
-    }
-    .welcome-box h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    .welcome-box p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #e0e0e0;
-    }
-    .form-card {
-      background-color: white;
-      color: #000;
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 350px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      text-align: center;
-    }
-    .form-card img {
-      height: 100px;
-      margin-bottom: 15px;
-    }
-    .form-card input[type="text"],
-    .form-card input[type="submit"] {
-      width: 90%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-    .form-card input[type="submit"] {
-      background: linear-gradient(to right, #004c8c, #00b4db);
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    .form-card input[type="submit"]:hover {
-      opacity: 0.9;
-    }
-    footer {
-      background-color: white;
-      color: #222;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      border-top: 1px solid #ccc;
-    }
-    .languages {
-      margin: 10px auto;
-      text-align: center;
-      font-size: 15px;
-    }
-    .languages span {
-      margin: 0 10px;
-      color: #eee;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Emblem_of_India.svg/120px-Emblem_of_India.svg.png" alt="Emblem" />
+    <img src="images/emblem.png" alt="Emblem" class="emblem" />
     <h2>Government of India - National Voting Portal</h2>
-    <img src="https://uidai.gov.in/images/logo.png" alt="myVote" />
+    <img src="images/logo.png" alt="myVote" class="logo" />
   </header>
 
   <div class="main-container">
     <div class="welcome-box">
       <h1>Welcome to <br><strong>myVote</strong></h1>
-      <p>Click on Login button to cast your vote or view results securely. Use your voter ID or registered mobile to verify your identity. Ensure you're eligible and registered before proceeding to vote in the national digital voting system.</p>
+      <p>Click on Login to cast your vote or view results. Use your Voter ID to verify your identity. Ensure you're eligible before voting in the national online system.</p>
     </div>
 
     <div class="form-card">
-      <img src="https://www.pngitem.com/pimgs/m/114-1149842_fingerprint-png-image-fingerprint-logo-png-transparent-png.png" alt="Fingerprint">
+      <img src="images/fingerprint.png" alt="Fingerprint" class="fingerprint">
       <form method="post" action="vote.php">
         <input type="text" name="vote_id" placeholder="Enter Voting ID" required><br>
         <input type="submit" value="Vote Now">
@@ -136,7 +45,7 @@
   </div>
 
   <footer>
-    © 2025 myVote Portal | Designed for Online Voting - National Informatics Centre (NIC)
+    © 2025 myVote Portal | Designed by National Informatics Centre (NIC)
   </footer>
 
 </body>
