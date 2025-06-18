@@ -1,136 +1,61 @@
-body {
+/* style.css */
+
+body, html {
     margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #6f2b82, #f8b500);
+    background-color: #f0f0f0;
 }
 
-.top-bar {
-    background-color: #002f6c;
-    color: red;
-    padding: 8px;
-    text-align: right;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.header {
+.screen-center {
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: white;
-    padding: 5px 15px;
 }
 
-.header img {
-    height: 50px;
-    margin-right: 20px;
-}
-
-.header-buttons {
-    margin-left: auto;
-    display: flex;
-    gap: 10px;
-}
-
-.vote-btn {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-.vote-btn:hover {
-    background-color: #0056b3;
-}
-
-.header-buttons form input[type="submit"] {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.header-buttons form input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-}
-
-.left-panel {
-    width: 50%;
-    color: white;
-    padding-right: 40px;
-}
-
-.left-panel img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
-    margin-bottom: 15px;
-}
-
-.right-panel {
-    width: 20%;
-    height: 250px;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 25px 150px 15px 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to bottom, #ffffff, #e0f7ff);
-    display: none; /* HIDE BY DEFAULT */
-    flex-direction: column;
-    justify-content: center;
-}
-
-.login-box h2 {
+.box {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.box h3 {
     margin-bottom: 20px;
-    color: #333;
 }
 
-.login-box input {
-    display: block;
-    width: 80%;
-    margin: 15px auto;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.login-box .button-group {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.box a {
+    display: inline-block;
     margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
 }
 
-.login-box input[type="submit"],
-.login-box input[type="reset"] {
-    width: 120px;
-    padding: 10px;
+.box a:hover {
+    text-decoration: underline;
+}
+
+input[type="radio"] {
+    margin: 5px 0;
+}
+
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 6px;
-    background: linear-gradient(to right, #007bff, #ff69b4);
-    color: white;
-    font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.login-box input[type="submit"]:hover,
-.login-box input[type="reset"]:hover {
-    opacity: 0.85;
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }

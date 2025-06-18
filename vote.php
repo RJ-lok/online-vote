@@ -17,7 +17,7 @@ function showMessage($message, $showForm = false, $vote_id = '') {
     <head>
         <meta charset="UTF-8" />
         <title>Voting Page</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="vote.css" />
     </head>
     <body>
         <div class="screen-center">
