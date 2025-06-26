@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Voting System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="top-bar">
+        <marquee style="font-size: 20px;">Welcome to Online Voting System</marquee>
+    </div>
+
+    <div class="header">
+        <img src="images.png" alt="ECI Logo">
+        <h1>भारत निर्वाचन आयोग<br>Election Commission of India</h1>
+
+        <div class="header-buttons">
+            <a href="display.php" >View Result</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-panel">
+            <div class="profile-box">
+              
+                <img src="images.jpeg" alt="Commissioner Image">
+                <h3>
+                    <span style="color:rgb(255,255,0)"><h2>Shri Gyanesh Kumar</h2></span>
+                     Shri Gyanesh Kumar took charge<br>
+                     as the 26th Chief Election<br>
+                     Commissioner of  India on <br>
+                     19th February 2025.<br>
+</h3>
+                     </div>
+        </div>
+
+        <div class="vote-panel">
+            <form class="login-box" action="vote.php" method="post">
+                <h2><center>Vote Here</center></h2><br>
+                <input type="text" id="num1" name="vote_id" placeholder="Voting ID" required><br>
+                <input type="text" id="num2" name="aadhaar_last4" placeholder="Last 4 digits of Aadhaar" required><br>
+                <div class="button-group">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
