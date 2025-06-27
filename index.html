@@ -4,7 +4,16 @@
     <title>Online Voting System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-      <script src="script.js" defer></script>
+      <script>
+      ["num1", "num2"].forEach(id => {
+  document.getElementById(id).oninput = function () {
+    if (/[^0-9]/.test(this.value)) {
+      alert("Only numbers allowed");
+      this.value = this.value.replace(/[^0-9]/g, '');
+    }
+  };
+});
+      </script>
     <meta charset="UTF-8">
 </head>
 <body>
