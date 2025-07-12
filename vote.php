@@ -28,29 +28,29 @@ function showMessage($message, $showForm = false, $vote_id = '') {
     <form method="post" action="submit_vote.php" class="vote-form">
         <input type="hidden" name="vote_id" value="<?= htmlspecialchars($vote_id) ?>">
              <label class="vote-option">
-            <input type="radio" name="candidate" value="jagdish" required>
-            <img src="jagdish.png" alt="Jagdish" class="candidate-img">
-            Jagdish
+            <input type="radio" name="candidate" value="Rutuja" required>
+            <img src="Rutuja.jpeg" alt="Rutuja" class="candidate-img">
+            Rutuja
         </label>
         
        <br>
 
         <label class="vote-option">
-            <input type="radio" name="candidate" value="ashish">
-            <img src="ashish.jpeg" alt="Ashish" class="candidate-img">
-            Ashish
+            <input type="radio" name="candidate" value="Shitija">
+            <img src="Shitija.jpg" alt="Shitija" class="candidate-img">
+            Shitija
         </label><br>
 
         <label class="vote-option">
-            <input type="radio" name="candidate" value="shivaji">
-            <img src="shivaji.jpeg" alt="Shivaji" class="candidate-img">
-            Shivaji
+            <input type="radio" name="candidate" value="Rajesh">
+            <img src="Rajesh.jpeg" alt="Rajesh" class="candidate-img">
+            Rajesh
         </label><br>
 
         <label class="vote-option">
-            <input type="radio" name="candidate" value="ritesh">
-            <img src="ritesh.png" alt="Ritesh" class="candidate-img">
-            Ritesh
+            <input type="radio" name="candidate" value="Rina">
+            <img src="Rina.png" alt="Rina" class="candidate-img">
+            Rina
         </label>
         <div class="button-group">
         <input type="submit" value="Vote" class="vote-button">
